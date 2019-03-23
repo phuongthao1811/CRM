@@ -1,0 +1,77 @@
+.navbar-inverse {
+	background-color: #9E2628;
+	margin-top: 0;
+}
+.top-left {
+	font-size: 14px;
+    color: #ffdedf;
+    font-weight: 400;
+    width: 70%;
+    float: left;
+}
+.top-left a {
+	font-size: 14px;
+    color: #ffdedf;
+    font-weight: 400;
+}
+.navbar-brand {
+	color:  #FFf !important;
+	font-size: 22px;
+}
+.header {
+	height: 100px;
+}
+.header ul {
+	list-style: none;
+}
+.header ul li {
+	text-decoration: none;
+}
+.header ul li a {
+	text-decoration: none;
+
+}
+.title {
+/* 	text-align: center;
+ */	font-weight: 700;
+	font-size: 30px;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+	font-size: 15px;
+	color: #000;
+	line-height: 30px;
+}
+a:hover {
+	color: #F39422;
+}
+.carousel-inner {
+	max-height:  400px;
+}
+.info-wrapper {
+	border: 2px solid #22222229;
+	border-radius: 5px;
+	min-height: 300px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.thumbnail {
+	border: none;
+	background: none;
+}
+.thumbnail img {
+	width: 100%;
+	height: 200px;
+}
+.info ul {
+	margin-top: 40px;
+	padding: 0;
+}
+.info ul li{
+	list-style: none;
+}
+.catItemExtraFieldsLabel {
+	color:  #000;
+	font-weight: 700;
+}

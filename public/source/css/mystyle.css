@@ -1,0 +1,23 @@
+thead tr th{
+	text-align: center;"
+}
+tbody tr td:nth-child(1), td:nth-child(2){
+	text-align: center;
+}
+tbody tr td:nth-child(1){
+	text-align: center;
+	width: 80px
+}
+tbody tr td:last-child{
+	text-align: center;
+	width: 250px;
+}
+.btn-add{
+	margin: 10px 20px 10px 0px;
+}
+.form-label-group input {
+	width: 300px;
+}
+/* button{
+	margin-right: 10px;
+} */
