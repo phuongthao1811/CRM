@@ -54,11 +54,8 @@
             <span class="icon-bar"></span>
         </button>
 
-        {{--<ul class="nav navbar-nav navbar-left navbar-top-links">--}}
-            {{--<li><a href="#"><i class="fa fa-home fa-fw"></i> Website</a></li>--}}
-        {{--</ul>--}}
-
         <ul class="nav navbar-right navbar-top-links">
+            <label style="color: white">{{ (Auth::user())->name }}</label>
             <li class="dropdown navbar-inverse">
 
             <li class="dropdown">
@@ -76,7 +73,6 @@
                 </ul>
             </li>
         </ul>
-        <!-- /.navbar-top-links -->
 
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">

@@ -74,10 +74,15 @@ Route::group(['prefix'=>'admin', 'middleware'=>'adminLogin'],function(){
     });
 });
 
+Route::group(['prefix'=>'nhanvien', 'middleware'=>'nvLogin'],function(){
+    //hợp đồng
+    Route::group(['prefix'=>'hopdong'],function(){
+        Route::get('list','HdCtrl@getHD');
+        Route::post('list','HdCtrl@postHD');
+        Route::get('list/{id}/del','HdCtrl@getDelHD');
+        Route::get('list/{id}/edit','HdCtrl@geteditHD');
+        Route::post('list/update','HdCtrl@updateHD');
+    });
+});
+
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
