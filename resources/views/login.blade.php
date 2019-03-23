@@ -80,7 +80,7 @@
     <div class="login_wrapper">
         <div class="animate form login_form">
             <section class="login_content">
-                <form action="login" method="POST" role="form">
+                <form action="elogin" method="POST" role="form">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="title">Đăng nhập vào hệ thống quản lý cho thuê xe</div>
                     @if(session('mess'))

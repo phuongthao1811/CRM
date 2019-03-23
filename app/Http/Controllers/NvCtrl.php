@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\NvModel;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class NvCtrl extends Controller
 {
@@ -81,10 +82,14 @@ class NvCtrl extends Controller
                 }
             }
             echo 'f';
-            // echo $user;
         }else{
             return redirect('login')->with('mess','Đăng nhập thất bại,vui lòng kiểm tra lại');
         }
 
+    }
+
+    public function getLogout(){
+        Auth::logout();
+        return redirect('elogin');
     }
 }

@@ -16,8 +16,10 @@ Route::get('/', function () {
 });
 Route::get('index','Controller@getIndex');
 
-Route::get('login','NvCtrl@getLogin');
-Route::post('login','NvCtrl@postLogin');
+Route::get('elogin','NvCtrl@getLogin');
+Route::post('elogin','NvCtrl@postLogin');
+
+Route::get('elogout','NvCtrl@getLogout');
 
 Route::group(['prefix'=>'admin', 'middleware'=>'adminLogin'],function(){
     //trang chủ

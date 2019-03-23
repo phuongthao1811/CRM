@@ -21,9 +21,9 @@ class AdminMid
             if($user->level == 1)
                 return $next($request);
             else
-                return redirect('login');
+                return redirect('elogin');
         }
         else
-            return redirect('login');
+            return redirect('elogin');
     }
 }
