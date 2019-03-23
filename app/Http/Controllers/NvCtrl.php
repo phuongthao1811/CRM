@@ -83,7 +83,7 @@ class NvCtrl extends Controller
             }
             echo 'f';
         }else{
-            return redirect('login')->with('mess','Đăng nhập thất bại,vui lòng kiểm tra lại');
+            return redirect('elogin')->with('mess','Đăng nhập thất bại,vui lòng kiểm tra lại');
         }
 
     }
